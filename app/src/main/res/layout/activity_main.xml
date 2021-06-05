@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".view.MainActivity">
+
+        <!--EditText with id editText-->
+
+        <EditText
+            android:id="@+id/ipText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="@color/teal_200"
+            android:backgroundTint="#80DEEA"
+            android:hint="IP"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/portText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="@color/teal_200"
+            android:backgroundTint="#80DEEA"
+            android:hint="PORT"
+            android:inputType="text" />
+
+        <!--Button with id showInput-->
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="#5C6BC0"
+            android:text="submit"
+            android:textColor="@android:color/white" />
+
+
+    </LinearLayout>
+</layout>
