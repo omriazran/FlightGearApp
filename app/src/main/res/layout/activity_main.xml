@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+<layout
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
@@ -7,7 +7,9 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
+        android:background="@drawable/background"
         tools:context=".view.MainActivity">
+
 
         <!--EditText with id editText-->
 
@@ -18,8 +20,9 @@
             android:layout_margin="16dp"
             android:background="@color/teal_200"
             android:backgroundTint="#80DEEA"
-            android:hint="IP"
-            android:inputType="text" />
+            android:hint="@string/ip"
+            android:inputType="text"
+            android:autofillHints="" />
 
         <EditText
             android:id="@+id/portText"
@@ -28,8 +31,9 @@
             android:layout_margin="16dp"
             android:background="@color/teal_200"
             android:backgroundTint="#80DEEA"
-            android:hint="PORT"
-            android:inputType="text" />
+            android:hint="@string/port"
+            android:inputType="text"
+            android:autofillHints="" />
 
         <!--Button with id showInput-->
 
@@ -39,8 +43,34 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:backgroundTint="#5C6BC0"
-            android:text="submit"
+            android:text="@string/submit"
             android:textColor="@android:color/white" />
+
+        <!--        throttle-->
+
+        <com.example.flightgearapp.view.JoystickView
+            android:id="@+id/testJoystick"
+            android:layout_width="315dp"
+            android:layout_height="256dp"
+            android:translationX="40dp"
+            android:translationY="25dp" />
+
+        <SeekBar
+            android:id="@+id/SeekBar"
+            android:layout_width="277dp"
+            android:layout_height="20dp"
+            android:rotation="270"
+            android:rotationX="0"
+            android:rotationY="0"
+            android:translationX="230dp"
+            android:translationY="-100dp" />
+<!--        rudder-->
+        <SeekBar
+            android:id="@+id/SeeKBar4"
+            android:layout_width="277dp"
+            android:layout_height="20dp"
+            android:translationX="50dp"
+            android:translationY="20dp" />
 
 
     </LinearLayout>
