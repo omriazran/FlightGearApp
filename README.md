@@ -19,4 +19,5 @@ The app offers the following options:
 
 ### Video
 [The video with sound](FG_app_video.mp4) - need to download before watching.
+
 ![](app_screen.png)
