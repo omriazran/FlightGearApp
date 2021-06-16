@@ -11,7 +11,7 @@
         tools:context=".view.MainActivity">
 
 
-        <!--EditText with id editText-->
+        <!-- ip textBox-->
 
         <EditText
             android:id="@+id/ipText"
@@ -24,6 +24,7 @@
             android:inputType="text"
             android:autofillHints="" />
 
+        <!-- port textBox-->
         <EditText
             android:id="@+id/portText"
             android:layout_width="match_parent"
@@ -35,7 +36,7 @@
             android:inputType="text"
             android:autofillHints="" />
 
-        <!--Button with id showInput-->
+        <!-- submit button-->
 
         <Button
             android:id="@+id/submit"
@@ -46,8 +47,6 @@
             android:text="@string/submit"
             android:textColor="@android:color/white" />
 
-        <!--        throttle-->
-
         <com.example.flightgearapp.view.JoystickView
             android:id="@+id/testJoystick"
             android:layout_width="315dp"
@@ -55,6 +54,7 @@
             android:translationX="40dp"
             android:translationY="25dp" />
 
+        <!--throttle seekBar-->
         <SeekBar
             android:id="@+id/SeekBar"
             android:layout_width="277dp"
@@ -64,7 +64,7 @@
             android:rotationY="0"
             android:translationX="230dp"
             android:translationY="-100dp" />
-<!--        rudder-->
+       <!--rudder seekBar-->
         <SeekBar
             android:id="@+id/SeeKBar4"
             android:layout_width="277dp"

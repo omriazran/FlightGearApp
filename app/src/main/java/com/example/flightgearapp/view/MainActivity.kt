@@ -16,10 +16,11 @@ import com.example.flightgearapp.R
 import com.example.flightgearapp.viewModel.flightGearVM
 
 class MainActivity : AppCompatActivity(),JoystickView.JoystickListener {
+    // fields
     var vm : flightGearVM? = null
     @SuppressLint("SetTextI18n")
+
     override fun onCreate(savedInstanceState: Bundle?) {
-        // define view model variable
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
@@ -58,15 +59,8 @@ class MainActivity : AppCompatActivity(),JoystickView.JoystickListener {
                 }
 
             }
-            override fun onStartTrackingTouch(seek: SeekBar) {
-                // write custom code for progress is started
-            }
-            override fun onStopTrackingTouch(seek: SeekBar) {
-                // write custom code for progress is stopped
-                Toast.makeText(this@MainActivity,
-                    "Throttle : " + (seek.progress / 100.0),
-                    Toast.LENGTH_SHORT).show()
-            }
+            override fun onStartTrackingTouch(seek: SeekBar) {}
+            override fun onStopTrackingTouch(seek: SeekBar) {}
         })
         // define rudder listeners
         rudder?.setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener{
@@ -80,18 +74,12 @@ class MainActivity : AppCompatActivity(),JoystickView.JoystickListener {
                 }
 
             }
-            override fun onStartTrackingTouch(seek: SeekBar) {
-                // write custom code for progress is started
-            }
-            override fun onStopTrackingTouch(seek: SeekBar) {
-                // write custom code for progress is stopped
-                Toast.makeText(this@MainActivity,
-                    "Rudder : " + ((seek.progress  - 50.0) / 50.0),
-                    Toast.LENGTH_SHORT).show()
-            }
+            override fun onStartTrackingTouch(seek: SeekBar) {}
+            override fun onStopTrackingTouch(seek: SeekBar) {}
         })
 
     }
+    // binding the joystick movement to viewModel attributes
     override fun onJoystickMoved(aileron: Float, elevator: Float, source: Int) {
         if (vm == null){
             return
