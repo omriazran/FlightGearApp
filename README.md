@@ -19,4 +19,4 @@ The app offers the following options:
 
 ### Video
 [The video with sound](FG_app_video.mp4) - need to download before watching.
-![](Anomalies_Detectector_Web_App.gif)
+![](app_screen.png)
