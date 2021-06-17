@@ -20,6 +20,6 @@ The app offers the following options:
 - Fly the airplane!
 
 ### Video
-[The video with sound](FG_app_video.mp4) - need to download before watching.
+[Full length video with sound](FG_app_video.mp4) - need to download before watching.
 
 ![](FG_app_gif.gif)
