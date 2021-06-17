@@ -2,6 +2,8 @@
 ### General
 In this project, we built an Android Application, which allows us to control the flight of the aircraft and connect to the Flight Gear over TCP. We used the MVVM architecture, Client-Server architecture, and parallel programming.
 
+![](app_screen.png)
+
 ### Repositories structure
 - View Model folder - contains the view model src code.
 - Model folder - contains the model src code.
@@ -20,4 +22,4 @@ The app offers the following options:
 ### Video
 [The video with sound](FG_app_video.mp4) - need to download before watching.
 
-![](app_screen.png)
+![](FG_app_gif.gif)
